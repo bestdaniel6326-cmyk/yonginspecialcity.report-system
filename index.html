@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PM 신고 시스템</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+
+    .header {
+      background-color: #0b3a66;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .hero,
+    .guide,
+    .notice {
+      background-color: white;
+      border: 1px solid #d9e1e8;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 24px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: #0b3a66;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .button-box {
+      margin-top: 25px;
+    }
+
+    .main-btn,
+    .sub-btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .main-btn {
+      background-color: #0b3a66;
+      color: white;
+    }
+
+    .sub-btn {
+      background-color: white;
+      color: #0b3a66;
+      border: 1px solid #0b3a66;
+    }
+
+    .guide h2,
+    .notice h2 {
+      color: #0b3a66;
+      border-left: 5px solid #0b3a66;
+      padding-left: 10px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .step {
+      background-color: #eef3f8;
+      border: 1px solid #cbd8e3;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .step strong {
+      display: block;
+      color: #0b3a66;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .notice ul {
+      line-height: 1.8;
+    }
+
+    .footer {
+      text-align: center;
+      color: #666;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .main-btn,
+      .sub-btn {
+        width: 100%;
+        margin: 6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>개인형 이동장치 신고 시스템</h1>
+    <p>방치된 전동킥보드 및 PM을 간편하게 신고할 수 있습니다.</p>
+  </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <h2>불편한 PM, 바로 신고하세요</h2>
+      <p>QR코드 또는 신고하기 버튼을 통해 위치와 사진을 등록할 수 있습니다.</p>
+
+      <div class="button-box">
+        <a href="report.html" class="main-btn">신고하기</a>
+        <a href="admin.html" class="sub-btn">관리자 확인</a>
+      </div>
+    </section>
+
+    <section class="guide">
+      <h2>신고 절차</h2>
+
+      <div class="steps">
+        <div class="step">
+          <strong>01</strong>
+          <p>QR코드 접속</p>
+        </div>
+
+        <div class="step">
+          <strong>02</strong>
+          <p>위치 확인</p>
+        </div>
+
+        <div class="step">
+          <strong>03</strong>
+          <p>위반 유형 선택</p>
+        </div>
+
+        <div class="step">
+          <strong>04</strong>
+          <p>사진 등록</p>
+        </div>
+
+        <div class="step">
+          <strong>05</strong>
+          <p>신고 접수 완료</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2>신고 대상</h2>
+      <ul>
+        <li>보도 중앙에 방치된 PM</li>
+        <li>횡단보도, 점자블록, 버스정류장 주변 방치</li>
+        <li>건물 출입구를 막고 있는 PM</li>
+        <li>차도 또는 주차장 진입로에 방치된 PM</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© PM 신고 시스템</p>
+  </footer>
+
+</body>
+</html>
